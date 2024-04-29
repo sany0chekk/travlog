@@ -1,0 +1,9 @@
+:root {
+  --dark-color: #191825;
+  --light-color: #ffffff;
+  --pink-color: #f85e9f;
+  --orange-color: #ff5722;
+  --purple-color: #5d50c6;
+
+  --h-effect: cubic-bezier(0.4, 0, 0.2, 1);
+}

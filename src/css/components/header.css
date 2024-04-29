@@ -1,0 +1,58 @@
+.header {
+  padding-top: 32px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav {
+  @media screen and (max-width: 1169px) {
+    display: none;
+  }
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.header-nav-link {
+  font-size: 14px;
+  line-height: 1.2;
+  opacity: 0.5;
+
+  transition: opacity 0.2s var(--h-effect);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.header-auth {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.header-auth-login {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+
+  transition: opacity 0.2s var(--h-effect);
+  margin-right: 32px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.header-auth-reg {
+  padding: 16px 32px;
+}
