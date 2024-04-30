@@ -1,16 +1,16 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const swiper = new Swiper('.services-list-container', {
+const servicesSwiper = new Swiper('.services-list-container', {
   direction: 'horizontal',
   loop: true,
+  spaceBetween: 16,
   autoplay: {
-    delay: 2000,
+    delay: 4000,
   },
   breakpoints: {
     768: {
       slidesPerView: 3,
-      spaceBetween: 16,
       centeredSlides: true,
     },
   },
