@@ -37,3 +37,30 @@ body {
     opacity: 0.8;
   }
 }
+
+.tag {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--pink-color);
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.title {
+  font-size: 29px;
+  line-height: 1.2;
+  text-align: center;
+
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 33px;
+  }
+}

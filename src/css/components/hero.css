@@ -123,6 +123,12 @@
   line-height: 1.2;
 
   padding: 24px;
+  transition: opacity 0.2s var(--h-effect);
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 
   & i {
     color: var(--purple-color);
