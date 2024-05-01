@@ -15,5 +15,7 @@
 @import url('./components/services.css');
 @import url('./components/destination.css');
 @import url('./components/travel.css');
+@import url('./components/features.css');
+@import url('./components/testimonials.css');
 
 @import url('./components/modal-nav-menu.css');

@@ -24,13 +24,14 @@
     position: absolute;
     top: 150px;
     left: 0;
-    width: 60%;
+    width: 50%;
+    margin-bottom: 0;
   }
 }
 
 .travel-content {
   @media screen and (min-width: 1170px) {
-    width: 40%;
+    width: 50%;
   }
 }
 
