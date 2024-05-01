@@ -8,6 +8,9 @@ const testimonialsSwiper = new Swiper('.testimonials-swiper-container', {
   centeredSlides: true,
   slidesPerView: 'auto',
   spaceBetween: 16,
+  autoplay: {
+    delay: 4000,
+  },
   navigation: {
     nextEl: '.testimonials-next-btn',
     prevEl: '.testimonials-prev-btn',

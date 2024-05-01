@@ -1,6 +1,10 @@
 .testimonials {
   padding-top: 64px;
   position: relative;
+
+  @media screen and (min-width: 1170px) {
+    padding-top: 150px;
+  }
 }
 
 .testimonials-title {
@@ -11,9 +15,19 @@
   margin-bottom: 64px;
 }
 
-/* .testimonials-user.swiper-slide {
-  width: 60%;
-} */
+.testimonials-user.swiper-slide {
+  width: 580px;
+  opacity: 0;
+  transition: opacity 0.3s var(--h-effect);
+
+  @media screen and (min-width: 1170px) {
+    width: 800px;
+  }
+}
+
+.testimonials-user.swiper-slide-active {
+  opacity: 1;
+}
 
 .testimonials-user-img {
   margin: 0 auto;
