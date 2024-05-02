@@ -42,6 +42,7 @@
   font-size: 23px;
   line-height: 1.2;
   color: var(--orange-color);
+  text-align: right;
 
   margin-right: 5px;
 }

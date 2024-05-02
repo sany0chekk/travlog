@@ -4,6 +4,10 @@ body {
   color: var(--dark-color);
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 430px;
   padding: 0 16px;
