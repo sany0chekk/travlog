@@ -4,7 +4,7 @@ import './js/components/features-list-animation';
 import './js/components/join-form';
 import './js/components/footer-accordeon';
 
-import './js/gsap-animations/animations-config';
+// import './js/gsap-animations/animations-config';
 
 import './js/swiper/services-swiper';
 import './js/swiper/destination-swiper';
