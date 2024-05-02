@@ -1,11 +1,23 @@
 <section class="hero">
   <div class="container hero-container">
-    <img
-      srcset="./img/hero.png 1x, ./img/hero-2x.png 2x"
-      src="./img/hero.png"
-      alt="Photos"
-      class="hero-img"
-    />
+    <div class="hero-img-container">
+      <img
+        srcset="./img/hero.png 1x, ./img/hero-2x.png 2x"
+        src="./img/hero.png"
+        alt="Photos"
+        class="hero-img"
+      />
+      <span class="hero-img-el send">
+        <i class="fa-solid fa-paper-plane"></i>
+      </span>
+      <span class="hero-img-el people">
+        <i class="fa-solid fa-user-plus"></i>
+      </span>
+      <span class="hero-img-el places">
+        <i class="fa-solid fa-location-dot"></i>
+        Top places
+      </span>
+    </div>
     <div class="hero-content">
       <p class="hero-content-tag">
         Explore the world!
@@ -26,5 +38,8 @@
         </button>
       </div>
     </div>
+    <svg class="hero-arrows" width="70" height="180">
+      <use href="./img/icons.svg#icon-arrows"></use>
+    </svg>
   </div>
 </section>

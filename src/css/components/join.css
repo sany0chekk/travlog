@@ -2,6 +2,33 @@
   padding-top: 32px;
 }
 
+.join-container {
+  position: relative;
+}
+
+.join-el {
+  display: none;
+  position: absolute;
+  top: -40px;
+  left: -20px;
+  animation: moveTopLeft 1s var(--h-effect) infinite alternate;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+@keyframes moveTopLeft {
+  from {
+    transform: translate(0px, 0px); /* Початкове положення */
+    filter: drop-shadow(0 4px 4px var(--orange-color));
+  }
+  to {
+    transform: translate(10px, 10px); /* Кінцеве положення */
+    filter: drop-shadow(0 0px 10px var(--orange-color));
+  }
+}
+
 .join-content {
   background: rgba(250, 205, 73, 0.08);
   padding: 64px 32px;
