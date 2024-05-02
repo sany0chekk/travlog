@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 100;
 
   padding: 30px;
 
@@ -16,11 +17,8 @@
 
   visibility: hidden;
   opacity: 0;
-  transform: translate(0, -50px);
   pointer-events: none;
-
-  transition: visibility 0.2s var(--h-effect), opacity 0.2s var(--h-effect),
-    transform 0.2s var(--h-effect);
+  transform: translateX(-100px);
 
   &.active {
     visibility: visible;
@@ -68,6 +66,8 @@
 }
 
 .header-mobile-item {
+  opacity: 0;
+  transform: translateX(50px);
   text-align: center;
   &:not(:last-child) {
     margin-bottom: 25px;
@@ -91,6 +91,14 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
+}
+
+.header-mobile-button {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(50px);
 }
 
 .header-mobile-auth-login {

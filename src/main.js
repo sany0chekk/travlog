@@ -1,4 +1,5 @@
 import './js/components/mobile-nav-menu';
+import './js/components/smooth-scroll';
 import './js/components/hero-elements-animation';
 import './js/components/features-list-animation';
 import './js/components/join-form';
