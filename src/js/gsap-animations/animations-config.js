@@ -9,7 +9,7 @@ gsap.fromTo(
   '.header-logo',
   {
     opacity: 0,
-    x: -50,
+    x: -100,
   },
   {
     opacity: 1,
@@ -27,7 +27,7 @@ gsap.fromTo(
   '.header-nav-item',
   {
     opacity: 0,
-    y: -50,
+    y: -100,
   },
   {
     opacity: 0.5,
@@ -47,7 +47,7 @@ gsap.fromTo(
   '.header-auth',
   {
     opacity: 0,
-    x: 50,
+    x: 100,
   },
   {
     opacity: 1,
@@ -65,7 +65,7 @@ gsap.fromTo(
   '.header-mobile-open',
   {
     opacity: 0,
-    x: 50,
+    x: 100,
   },
   {
     opacity: 1,
