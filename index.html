@@ -20,9 +20,9 @@
     />
     
     <script type="module" crossorigin src="/travlog/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/travlog/assets/vendor-daa9cf5b.js">
-    <link rel="stylesheet" href="/travlog/assets/vendor-b51df72b.css">
-    <link rel="stylesheet" href="/travlog/assets/index-9d7f68e8.css">
+    <link rel="modulepreload" crossorigin href="/travlog/assets/vendor-76e3a6f9.js">
+    <link rel="stylesheet" href="/travlog/assets/vendor-347c60b6.css">
+    <link rel="stylesheet" href="/travlog/assets/index-a2e3268e.css">
   </head>
   <body>
     <div class="wrapper">
@@ -52,8 +52,12 @@
       </ul>
     </nav>
     <div class="header-auth">
-      <button type="button" class="header-auth-login">Log In</button>
-      <button type="button" class="btn header-auth-reg">Sign Up</button>
+      <button type="button" class="header-auth-login js-login-open">
+        Log In
+      </button>
+      <button type="button" class="btn header-auth-reg js-reg-open">
+        Sign Up
+      </button>
     </div>
     <button type="button" class="btn header-mobile-open">
       <i class="fa-solid fa-bars"></i>
@@ -96,9 +100,9 @@
         possible
       </p>
       <div class="hero-content-btns">
-        <button type="button" class="btn hero-content-btn js-hero-btn">
+        <a href="#join" class="btn hero-content-btn js-hero-btn">
           Get Started
-        </button>
+        </a>
         <button type="button" class="hero-content-video-btn js-hero-btn">
           <i class="fa-solid fa-circle-play"></i>
           Watch Demo
@@ -684,12 +688,94 @@
   </ul>
   <ul class="header-mobile-auth">
     <li class="header-mobile-button">
-      <button type="button" class="header-mobile-auth-login">Log In</button>
+      <button type="button" class="header-mobile-auth-login js-login-open">
+        Log In
+      </button>
     </li>
     <li class="header-mobile-button">
-      <button type="button" class="btn header-mobile-auth-reg">Sign Up</button>
+      <button type="button" class="btn header-mobile-auth-reg js-reg-open">
+        Sign Up
+      </button>
     </li>
   </ul>
+</div>
+
+    <div class="backdrop modal-auth js-login">
+  <div class="modal-container modal-auth-container">
+    <div class="modal-auth-dialog login">
+      <button class="modal-close-btn login-close">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </button>
+      <h2 class="modal-auth-title">Sign in</h2>
+      <form class="modal-auth-form">
+        <div class="modal-auth-element">
+          <i class="fa-solid fa-user"></i>
+          <input
+            type="email"
+            class="modal-auth-input"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="modal-auth-element">
+          <i class="fa-solid fa-lock"></i>
+          <input
+            type="password"
+            class="modal-auth-input password-input"
+            placeholder="Password"
+            required
+          />
+          <i class="fa-regular js-show-pass fa-eye"></i>
+        </div>
+        <button class="btn modal-auth-submit login">Login</button>
+      </form>
+      <p class="modal-auth-hint"></p>
+    </div>
+  </div>
+</div>
+
+    <div class="backdrop modal-auth js-reg">
+  <div class="modal-container modal-auth-container">
+    <div class="modal-auth-dialog reg">
+      <button class="modal-close-btn reg-close">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </button>
+      <h2 class="modal-auth-title">Sign up</h2>
+      <form class="modal-auth-form">
+        <div class="modal-auth-element">
+          <i class="fa-solid fa-user"></i>
+          <input
+            type="email"
+            class="modal-auth-input"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="modal-auth-element">
+          <i class="fa-solid fa-lock"></i>
+          <input
+            type="password"
+            class="modal-auth-input password-input"
+            placeholder="Password"
+            required
+          />
+          <i class="fa-regular js-show-pass fa-eye"></i>
+        </div>
+        <div class="modal-auth-element">
+          <i class="fa-solid fa-repeat"></i>
+          <input
+            type="password"
+            class="modal-auth-input password-input"
+            placeholder="Repeat the entered password"
+            required
+          />
+          <i class="fa-regular js-show-pass fa-eye"></i>
+        </div>
+        <button class="btn modal-auth-submit login">Registration</button>
+      </form>
+      <p class="modal-auth-hint"></p>
+    </div>
+  </div>
 </div>
 
     
