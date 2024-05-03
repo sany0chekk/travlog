@@ -17,15 +17,23 @@ function openMenu() {
     x: 0,
     visibility: 'visible',
     pointerEvents: 'auto',
-    duration: 0.5,
+    duration: 0.3,
     // ease: 'power1.out',
     onComplete: function () {
       gsap.to('.header-mobile-list li, .header-mobile-button', {
         opacity: 1,
         x: 0,
-        duration: 1,
+        duration: 0.2,
         ease: 'power3.out',
-        stagger: 0.2,
+        stagger: 0.1,
+        onComplete: function () {
+          gsap.to('.header-mobile-close', {
+            opacity: 1,
+            y: 0,
+            duration: 0.3,
+            ease: 'power2.out',
+          });
+        },
       });
     },
   });
@@ -41,15 +49,23 @@ function closeMenu() {
     ease: 'power1.out',
     stagger: -0.1,
     onComplete: function () {
-      gsap.to('.header-mobile', {
-        x: -100,
+      gsap.to('.header-mobile-close', {
         opacity: 0,
+        y: -100,
         duration: 0.2,
-        ease: 'power1.out',
+        ease: 'power2.out',
         onComplete: function () {
           gsap.to('.header-mobile', {
-            visibility: 'hidden',
-            pointerEvents: 'none',
+            x: -100,
+            opacity: 0,
+            duration: 0.2,
+            ease: 'power1.out',
+            onComplete: function () {
+              gsap.to('.header-mobile', {
+                visibility: 'hidden',
+                pointerEvents: 'none',
+              });
+            },
           });
         },
       });

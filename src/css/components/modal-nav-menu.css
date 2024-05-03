@@ -54,6 +54,8 @@
 }
 
 .header-mobile-close {
+  opacity: 0;
+  transform: translateY(-100px);
   margin-left: auto;
   margin-bottom: 100px;
 

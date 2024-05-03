@@ -1,0 +1,98 @@
+.modal-auth-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.modal-auth-dialog {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 400px;
+  width: 100%;
+
+  padding: 30px;
+  border-radius: 16px;
+  background-color: var(--light-color);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 5px 11px 0 rgba(0, 0, 0, 0.1),
+    0 20px 20px 0 rgba(0, 0, 0, 0.09), 0 45px 27px 0 rgba(0, 0, 0, 0.05),
+    0 81px 32px 0 rgba(0, 0, 0, 0.01), 0 126px 35px 0 rgba(0, 0, 0, 0);
+}
+
+.modal-close-btn {
+  margin-left: auto;
+  margin-bottom: 30px;
+
+  font-size: 25px;
+  color: var(--purple-color);
+}
+
+.modal-auth-title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  font-size: 20px;
+}
+
+.modal-auth-element {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #00000044;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 24px;
+
+  transition: border-color 0.2s var(--h-effect);
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  & i {
+    transition: color 0.2s var(--h-effect);
+  }
+
+  & i.hide {
+    display: none;
+  }
+
+  &:focus-within {
+    border-color: var(--purple-color);
+  }
+
+  &:focus-within i {
+    color: var(--purple-color);
+  }
+
+  &:focus-within .fa-eye,
+  &:focus-within .fa-eye-slash {
+    color: var(--dark-color);
+  }
+}
+
+.modal-auth-input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  outline: none;
+
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.modal-auth-submit {
+  width: 100%;
+  padding: 16px;
+
+  margin-top: 30px;
+}

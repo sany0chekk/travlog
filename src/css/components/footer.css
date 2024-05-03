@@ -81,13 +81,12 @@
   margin-bottom: 32px;
 
   & i {
-    transform: rotate(180deg);
     transition: transform 0.5s var(--h-effect);
   }
 
   &.active {
     & i {
-      transform: rotate(0);
+      transform: rotate(180deg);
     }
   }
 
