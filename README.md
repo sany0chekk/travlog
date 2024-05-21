@@ -1,6 +1,6 @@
 # Travlog
 Travlog is a web application for travel search, allowing users to find various trip options, view detailed information with descriptions and photos. The project is created to showcase front-end development skills.
-## Front-end developer
+## Developer
 - [sany0chekk](https://www.instagram.com/hackingbegin/)
 ## Libraries Used
 - [basiclightbox](https://basiclightbox.electerious.com): A lightweight and
